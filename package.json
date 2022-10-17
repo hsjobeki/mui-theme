@@ -1,0 +1,41 @@
+{
+  "name": "@hsjobeki/mui-theme",
+  "description": "A simple mui theme",
+  "author": "Johannes Kirschbauer",
+  "license": "ISC",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "workspaces": [
+    "src"
+  ],
+  "files": [
+    "dist"
+  ],
+  "types": "dist/index.d.ts",
+  "peerDependencies": {
+    "@mui/material": "^5.10.6"
+  },
+  "scripts": {
+    "build": "tsc",
+    "update:nix": "node2nix -d -l package-lock.json -e nix/node-env.nix -o nix/node-packages.nix -c nix/node.nix"
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended"
+    ]
+  },
+  "devDependencies": {
+    "@mui/material": "^5.10.6",
+    "@types/react": "^18.0.20",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "react": "^18.2.0",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.3"
+  }
+}
