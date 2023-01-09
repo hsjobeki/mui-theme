@@ -31,7 +31,6 @@
   "devDependencies": {
     "@mui/material": "^5.10.6",
     "@rollup/plugin-commonjs": "^24.0.0",
-    "@rollup/plugin-node-resolve": "^15.0.1",
     "@rollup/plugin-typescript": "^11.0.0",
     "@types/react": "^18.0.20",
     "@typescript-eslint/eslint-plugin": "^5.38.0",
